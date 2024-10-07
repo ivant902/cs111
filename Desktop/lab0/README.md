@@ -3,29 +3,25 @@ TODO: intro
 
 ## Building
 ```shell
-TODO: cmd for build
+make
 ```
 
 ## Running
 ```shell
-TODO: cmd for running binary
+sudo insmod proc_count.ko
 ```
-TODO: results?
+cat /proc/count
 
 ## Cleaning Up
 ```shell
-TODO: cmd for cleaning the built binary
+make clean
 ```
 
 ## Testing
 ```python
 python -m unittest
 ```
-TODO: results?
-
-Report which kernel release version you tested your module on
-(hint: use `uname`, check for options with `man uname`).
-It should match release numbers as seen on https://www.kernel.org/.
+Result should be an integer indicating how many processes are running.
 
 ```shell
 uname -r -s -v
