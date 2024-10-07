@@ -14,6 +14,7 @@ cat /proc/count
 
 ## Cleaning Up
 ```shell
+sudo rmmod proc_count
 make clean
 ```
 
