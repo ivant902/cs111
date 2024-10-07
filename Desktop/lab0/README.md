@@ -9,10 +9,13 @@ make
 ## Running
 ```shell
 sudo insmod proc_count.ko
-```
 cat /proc/count
+```
+This will load the module then output the contents of the /proc/count file, which is an integer indicating how many processes are running. 
 
-## Cleaning Up
+
+
+## Removing module then cleaning Up
 ```shell
 sudo rmmod proc_count
 make clean
@@ -22,8 +25,7 @@ make clean
 ```python
 python -m unittest
 ```
-Result should be an integer indicating how many processes are running.
-
+Running the unit tests should display "OK" or "FAILED". It will cross check the loaded module with commands piped together to count the number of running processes. 
 ```shell
 uname -r -s -v
 
